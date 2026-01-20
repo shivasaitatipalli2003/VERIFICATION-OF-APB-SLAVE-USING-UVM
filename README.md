@@ -32,3 +32,28 @@ The RTL (`apb_slave.sv`) implements a 3-state APB slave FSM:
 - Constrained random stimulus  
 - Functional comparison using `do_compare`  
 - Reusable UVM architecture
+
+## Test Scenarios Verified
+- Randomized write transactions  
+- Randomized read transactions  
+- Back-to-back transfers  
+- Reset behavior  
+- Memory data integrity  
+- Protocol state transitions
+
+## Results
+- Scoreboard comparison between DUT and predictor  
+- PASS/FAIL reporting in comparator  
+- Clean simulation on VCS & Verdi  
+- Protocol-compliant APB transactions
+
+## Learning Outcomes
+- UVM component synchronization via TLM  
+- Virtual interface usage  
+- Predictor–comparator modeling  
+- Constrained random verification  
+- APB protocol understanding
+
+## Author
+**Shivasai – VLSI Design Verification Engineer**
+
