@@ -33,6 +33,25 @@ The RTL (`apb_slave.sv`) implements a 3-state APB slave FSM:
 - Functional comparison using `do_compare`  
 - Reusable UVM architecture
 
+## Directory Structure
+├── RTL/  
+│   └── apb_slave.sv  
+├── UVM TB/  
+│   ├── apb_uvm_interface.sv  
+│   ├── apb_uvm_driver.sv  
+│   ├── apb_uvm_monitor.sv  
+│   ├── apb_uvm_agent.sv  
+│   ├── apb_uvm_prd.sv  
+│   ├── apb_uvm_cmp.sv  
+│   ├── apb_uvm_scoreboard.sv  
+│   ├── apb_uvm_sequence.sv  
+│   ├── apb_uvm_sequencer.sv  
+│   ├── apb_uvm_base_test.sv  
+│   ├── apb_uvm_pkg.sv  
+│   └── apb_uvm_tb_top.sv  
+└── TB/  
+    └── apb_tb.sv (basic SV TB)
+
 ## Test Scenarios Verified
 - Randomized write transactions  
 - Randomized read transactions  
